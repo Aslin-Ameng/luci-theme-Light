@@ -28,7 +28,7 @@ header { position: fixed; top: 0; left: 0; right: 0; background: #10ABE1; box-sh
 .brand { float: left; color: #ffffff; font-size: 25px; font-weight: 1200; line-height: 48px; margin-right: 25px; position: absolute; left: 0; margin-left: 15px; }
 header:before{background:#000 linear-gradient(to left,#00FF00,#FF8C00,#FF7F00,#FFFF00,#00FF00,#00FF00,#FFFF00,#FF7F00,#FF8C00,#00FF00);content:"";height:2px;position:absolute;top:0;width:100%;min-width:5in}   /* 最上面彩虹 */
 .nav li { float: left; }
-.nav a { display: block; color: #404040; line-height: 48px; padding: 0 19px;}
+.nav a { display: block; color: #404040; line-height: 48px; padding: 0 19px;}   /* 顶栏中字体颜色 */
 
 /* Dropdown */    /* 鼠标点击状态出现下面的字体 修改里面的背景和圆角还有颜色字体 */
 .dropdown { position: relative; }
