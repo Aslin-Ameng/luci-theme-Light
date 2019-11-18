@@ -35,11 +35,11 @@ header:before{background:#000 linear-gradient(to left,#00FF00,#FF8C00,#FF7F00,#F
 .dropdown:hover .dropdown-menu { display: block; }
 .dropdown-menu { display: none; position: absolute; top: 48px; background: #ffffff; border-radius: 9px; box-shadow: 0 1px 3px rgba(0,0,0,.3); padding: 8px 0; z-index: 100; }
 .dropdown-menu:before { content: ''; position: absolute; top: -6px; left: 27px; border-bottom: 6px solid #ffffff; border-left: 7px solid transparent; border-right: 7px solid transparent; }
-.dropdown-menu a { color: #404040; line-height: 29px; min-width: 120px; margin: 1px 0; padding: 0 20px; } /* 选择菜单横条间隔距离 */
+.dropdown-menu a { color: #404040; line-height: 29px; min-width: 135px; margin: 1px 0; padding: 0 20px; } /* 选择菜单横条长度 */
 .dropdown-menu a:hover { background: rgba(0,0,0,.1); color: #0099cc; }   /* 选择菜单横条颜色 */
  
 /* Label */   /* 右上角自动刷新 */
-.label { display: inline-block; background: #bbb; border-bottom: 0.5px solid rgba(0,0,0,.0); border-radius: 15px; color: #fff; font-size: 10px; line-height: 25px; text-transform: uppercase; margin-top: 12px; padding: 0 9px; cursor: pointer; }
+.label { display: inline-block; background: #bbb; border-bottom: 0.4px solid rgba(0,0,0,.0); border-radius: 15px; color: #fff; font-size: 10px; line-height: 25px; text-transform: uppercase; margin-top: 12px; padding: 0 9px; cursor: pointer; }
 .label.success { background: #00CED1; }
 .label.notice { background: #F48FB1; }
 .label.important { background: #f00; }
