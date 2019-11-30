@@ -24,7 +24,7 @@ a:hover { opacity: 1; }
 #.hidden { display: none; }
 
 /* Header */  /* 顶栏横条 */
-header { position: fixed; top: 0; left: 0; right: 0; background: #10ABE1; box-shadow: 0 1px 1px rgba(0,0,0,.1); z-index: 100; }
+header { position: fixed; top: 0; left: 0; right: 0; background: #44aadd; box-shadow: 0 1px 1px rgba(0,0,0,.1); z-index: 100; }
 .brand { float: left; color: #ffffff; font-size: 25px; font-weight: 1200; line-height: 48px; margin-right: 25px; position: absolute; left: 0; margin-left: 15px; }
 header:before{background:#000 linear-gradient(to left,#00FF00,#FF8C00,#FF7F00,#FFFF00,#00FF00,#00FF00,#FFFF00,#FF7F00,#FF8C00,#00FF00);content:"";height:2px;position:absolute;top:0;width:100%;min-width:5in}   /* 最上面彩虹 */
 .nav li { float: left; }
