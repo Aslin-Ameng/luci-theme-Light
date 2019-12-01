@@ -99,7 +99,7 @@ table td:first-child { color: #333; }
 #cbi-network tr, #cbi-wireless tr, tr tr { border-bottom: 0; }
 #cpu_free, #memtotal, #memfree, #memcache, #membuff, #conns, #swaptotal, #swapfree { line-height: 18px; }
 #cpu_free>div, #memtotal>div, #memfree>div, #memcache>div, #membuff>div, #conns>div, #swaptotal>div, #swapfree>div { border: 1.4px dashed #aaa !important; border-radius: 3px; width: 220px !important; }
-#cpu_free>div>div, #memtotal>div>div, #memfree>div>div, #memcache>div>div, #membuff>div>div, #conns>div>div, #swaptotal>div>div, #swapfree>div>div { background: #D8BFD8 !important; height: 19px !important; border-radius: 2px; }
+#cpu_free>div>div, #memtotal>div>div, #memfree>div>div, #memcache>div>div, #membuff>div>div, #conns>div>div, #swaptotal>div>div, #swapfree>div>div { background: #A3FF9B !important; height: 19px !important; border-radius: 2px; }
 
 /* Form */  /* 各个选项窗口圆角参数 */
 input, textarea, select { display: inline-block; border: 1px dashed #ddd; border-radius: 13px; box-sizing: border-box; color: #666; font: inherit; line-height: 16px; }
