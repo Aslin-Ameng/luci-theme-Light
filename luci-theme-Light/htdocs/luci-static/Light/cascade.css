@@ -78,7 +78,7 @@ h2+.cbi-map-descr { margin-top: -10px; }
  
 /* Fieldset */   /* 主页系统内存网络等字体颜色和错位问题#85d9ff */
 fieldset { border:0px; margin: 10px 0; padding: 0; }
-fieldset legend{background:#E6E6FA;border:1.5px dashed #778899;border-radius:20px;margin:4px 0;padding:5px 20px;font-size:10px;color:#444}   /* 修改系统天气内存字体添加阴影颜色 */
+fieldset legend{background:#E6E6FA;border:1.5px dashed #778899;border-radius:20px;margin:4px 0;padding:5px 15px;font-size:10px;color:#444}   /* 修改系统天气内存字体添加阴影颜色 */
 fieldset fieldset { margin: 0; }
 .cbi-value { margin-bottom: 10px; zoom: 1; overflow: hidden; }
 
