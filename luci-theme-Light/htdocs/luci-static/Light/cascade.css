@@ -78,7 +78,7 @@ h2+.cbi-map-descr { margin-top: -10px; }
  
 /* Fieldset */   /* 主页系统内存网络等字体颜色和错位问题#85d9ff */
 fieldset { border:0px; margin: 10px 0; padding: 0; }
-fieldset legend{background:#E6E6FA;border:1.5px dashed #778899;border-radius:20px;margin:4px 0;padding:.5em 2em;font-size:10px;color:#444}   /* 修改系统天气内存字体添加阴影颜色 */
+fieldset legend{background:#E6E6FA;border:1.5px dashed #778899;border-radius:20px;margin:4px 0;padding:5px 20px;font-size:10px;color:#444}   /* 修改系统天气内存字体添加阴影颜色 */
 fieldset fieldset { margin: 0; }
 .cbi-value { margin-bottom: 10px; zoom: 1; overflow: hidden; }
 
@@ -99,13 +99,11 @@ table td:first-child { color: #333; }
 #cbi-network tr, #cbi-wireless tr, tr tr { border-bottom: 0; }
 #cpu_free, #memtotal, #memfree, #memcache, #membuff, #conns, #swaptotal, #swapfree { line-height: 18px; }
 #cpu_free>div, #memtotal>div, #memfree>div, #memcache>div, #membuff>div, #conns>div, #swaptotal>div, #swapfree>div { border: 1.4px dashed #aaa !important; border-radius: 3px; width: 220px !important; }
-#cpu_free>div>div, #memtotal>div>div, #memfree>div>div, #memcache>div>div, #membuff>div>div, #conns>div>div, #swaptotal>div>div, #swapfree>div>div { background: #A3FF9B !important; height: 19px !important; border-radius: 2px; }
+#cpu_free>div>div, #memtotal>div>div, #memfree>div>div, #memcache>div>div, #membuff>div>div, #conns>div>div, #swaptotal>div>div, #swapfree>div>div { background: #7BEFB2 !important; height: 19px !important; border-radius: 2px; }
 
 /* Form */  /* 各个选项窗口圆角参数 */
-input, textarea, select { display: inline-block; border: 1px dashed #ddd; border-radius: 13px; box-sizing: border-box; color: #666; font: inherit; line-height: 16px; }
-input, select { width: 200px; }
-input, textarea { padding: 6px; }
-select { height: 30px; padding: 2px; }
+input,select,textarea{display:inline-block;box-sizing:border-box;padding:6px;width:190px;border:1px dashed #5F8CFF;border-radius:15px;color:#666;font:inherit;line-height:16px;}   /* 选项窗口颜色 */
+.table.cbi-section-table input,.table.cbi-section-table select,.table.cbi-section-table textarea,table.cbi-section-table input,table.cbi-section-table select,table.cbi-section-table textarea{width:auto;}
 #cbi-firewall-redirect input { width: 90px; }
 #cbi-network-switch_vlan select, #cbi-firewall-zone select, #cbi-firewall-redirect select { width: auto; }
 input:active, input:focus { outline: 0; border-color: #08c; }
@@ -114,11 +112,17 @@ input[type=button], input[type=reset], input[type=submit] { width: auto !importa
 input[type=checkbox], input[type=radio] { width: auto; margin: 0; vertical-align: middle; cursor: pointer; }
 input[type=file] { padding: 0; border: 0; }
 .cbi-input-invalid, .cbi-value-error input { color: #f00; border-color: #f00 !important; }
+.cbi-input-invalid,.cbi-value-error input{border-color:red!important;color:red;}
 .cbi-image-button { margin: 10px 8px; vertical-align: middle; }
 .uneditable-input { background: #fafafa; border-color: #f2f2f2; color: #ccc; cursor: not-allowed; }
 .uneditable-input:active, .uneditable-input:focus { border-color: #f2f2f2; }
-.cbi-value-description { display: inline; }
-.cbi-value-description img { vertical-align: sub; }
+.cbi-value-description{display:inline;padding:0 1.2rem;background-image:url(/luci-static/resources/cbi/help.gif);background-repeat:no-repeat;background-position-x:0;background-position-y:1px;}
+
+.cbi-value-description img{display:none;vertical-align:sub;}
+
+.cbi-page-actions{padding:10px 0;text-align:light;}
+
+.cbi-page-actions.right{float:inherit;}
  
 /* Button */ /* 各个按钮圆角颜色及添加阴影 */
 .cbi-button { border-radius: 15px !important; display: inline-block; background: #fff; border: 2px solid #7ADD7A; border-radius: 2px; box-shadow: 0 4px 4px rgba(0, 0, 0, .0); color: #333; line-height: 16px; padding: 6px 12px; cursor: pointer; }
