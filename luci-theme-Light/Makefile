@@ -8,7 +8,7 @@ include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=luci-theme-Light
 LUCI_PKGARCH:=all
-PKG_VERSION:=1.1
+PKG_VERSION:=1.5
 PKG_RELEASE:=20200114
 
 
