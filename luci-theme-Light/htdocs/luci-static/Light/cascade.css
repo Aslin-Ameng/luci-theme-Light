@@ -11,7 +11,7 @@ a:hover{opacity:1}
 .cbi-map-descr,.cbi-section-descr,h1,h2,h3,h4,h5,h6,p{color:#906BDA;margin-top:0;margin-bottom:10px}  /* 系统下面显示的配置路由器基础信息文字颜色 */
 ol,ul{margin:0;padding:0;list-style:none}
 .tr,tr{display:table-row}
-legend{color:#00AEEC;font-size:18px;font-weight:600;padding:0 0 1px} /* 系统内存等字体大小 */
+legend{color:#00AEEC;font-size:18px;font-weight:500;padding:0 0 1px} /* 系统内存等字体大小 */
 .left{text-align:left!important}
 .right{text-align:right!important}
 .center{text-align:center!important}
@@ -58,9 +58,9 @@ header:before{background:#000 linear-gradient(to left,#00FF00,#FF8C00,#FF7F00,#F
 .dropdown{position:relative}
 .dropdown:hover{background-color:#E6E6FA;}/* 鼠标点击状态后面出现的背景颜色 */
 .dropdown:hover .dropdown-menu{display:block}
-.dropdown-menu{display:none;position:absolute;top:40px;background:#ffffff;border-radius:9px;padding:5px 0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.3);}/* 鼠标点击状态下面选项的背景颜色 */
+.dropdown-menu{display:none;position:absolute;top:40px;background:#ffffff;border-radius:5px;padding:5px 0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.3);}/* 鼠标点击状态下面选项的背景颜色 */
 .dropdown-menu:before{content:'';position:absolute;top:-6px;left:23px;border-bottom:6px solid #F8F8FF;border-left:7px solid transparent;border-right:7px solid transparent} /* 选择菜单出现的小三角形箭头颜色 */
-.dropdown-menu a { color: #454C59; line-height: 26px; min-width: 135px; font-size:15px; margin: 1px 0; padding: 0 20px; } /* 选择菜单横条间长度和间距和字体颜色 */
+.dropdown-menu a { color: #454C59; line-height: 26px; min-width: 135px; font-size:13px; margin: 1px 0; padding: 0 20px; } /* 选择菜单横条间长度和间距和字体颜色 */
 .dropdown-menu a:hover { background: rgba(0,0,0,.1); color: #0099cc} /* 选择菜单鼠标放上后出现的字体颜色 */
 
 .cbi-dropdown{display:inline-block;width:210px;height:30px;padding:4px;font-size:13px;line-height:18px;color:gray;border:1px solid #ccc;border-radius:3px;box-sizing:border-box}
@@ -173,7 +173,6 @@ h2+.cbi-map-descr { margin-top: -10px; }
 
 /* Fieldset */   /* 主页系统内存网络等字体颜色和错位问题#85d9ff */
 fieldset{border:0;margin:10px 0;padding:0}
-fieldset legend{background:#E6E6FA;border:1px dashed #778899;border-radius:18px;margin:3px 0;padding:5px 15px;font-size:10px;color:#00AEEC}   /* 修改系统天气内存字体添加阴影颜色 */
 fieldset fieldset{margin:0}
 .cbi-value{margin-bottom:10px;zoom:1;clear:both}
 .table .cbi-value-field,table .cbi-value-field{display:table-cell}
