@@ -11,7 +11,7 @@ a:hover{opacity:1}
 .cbi-map-descr,.cbi-section-descr,h1,h2,h3,h4,h5,h6,p{color:#906BDA;margin-top:0;margin-bottom:10px}  /* 系统下面显示的配置路由器基础信息文字颜色 */
 ol,ul{margin:0;padding:0;list-style:none}
 .tr,tr{display:table-row}
-legend{color:#00AEEC;font-size:18px;font-weight:500;padding:0 0 1px} /* 系统内存等字体大小 */
+legend{color:#48D1CC;font-size:0.8pc;font-weight:600;padding:0 0 1px} /* 系统内存等字体大小及颜色 */
 .left{text-align:left!important}
 .right{text-align:right!important}
 .center{text-align:center!important}
@@ -23,7 +23,9 @@ legend{color:#00AEEC;font-size:18px;font-weight:500;padding:0 0 1px} /* 系统�
 .inline{display:inline}
 .hidden{display:none}
 
-
+/* Style */
+.container:first-child{min-height:40px}   /* 登陆主页上面蓝色横条宽度 */
+.container{max-width:75pc;margin:0 auto}
 
 /* 隐藏登录用户栏 */
 #.container form[action$="/cgi-bin/luci"] .cbi-map fieldset fieldset div:first-child { display: none; }
@@ -32,35 +34,30 @@ legend{color:#00AEEC;font-size:18px;font-weight:500;padding:0 0 1px} /* 系统�
 #.inline { display: inline; }
 #.hidden { display: none; }
 
-
-/* Style */
-.container:first-child{min-height:40px}   /* 登陆主页上面蓝色横条宽度 */
-.container{max-width:75pc;margin:0 auto}
-
 /* Header */ /* 顶栏横条 */
-header{font-size:14px;position:fixed;top:0;left:0;right:0;background:#00AEEC;box-shadow:0 2px 2px rgba(0,0,0,.1);z-index:100;border-bottom:2.5px solid #726bda}
+header{font-size:14px;position:fixed;top:0;left:0;right:0;background:#71B7E6;box-shadow:0 2px 2px rgba(0,0,0,.1);z-index:100;border-bottom:2.5px solid #726bda}
 
 /*  .brand{float:left;color:#fff;font-size:24px;font-weight:400;line-height:40px;margin-right:20px;position:absolute;left:0;margin-left:20px} */ 
 .brand{float:left;color:#fff;font-size:24px;font-weight:450;line-height:40px;margin-right:20px; position:absolute;width:200px;left:50%;margin-left:-780px;}  /* openwrt显示大小以及定死位置 */
 header:before{background:#000 linear-gradient(to left,#00FF00,#FF8C00,#FF7F00,#FFFF00,#00FF00,#00FF00,#FFFF00,#FF7F00,#FF8C00,#00FF00);content:"";height:2px;position:absolute;top:0;width:100%;min-width:5in}   /* 最上面彩虹 */
 .brand:hover { opacity: 1; }
 .nav li { float: left; }
-.nav a { display: block; color: #ffffff; line-height: 48px; padding: 0 19px;} 
+.nav a { display: block; color:#404040; line-height: 48px; padding: 0 19px;}   /* 顶栏中字体颜色 */
 
 
 /* .brand { display:none; } */
 .brand:hover{opacity:1}
 .nav li{float:left}
-.nav a{display:block;color:#404040;line-height:40px;padding:0 15px}    /* 顶栏中字体颜色 */
+.nav a{display:block;color:#404040;line-height:40px;padding:0 15px}     /* 顶栏中字体颜色 */
 .nav a:hover {}
 
 /* Dropdown */     /* 鼠标点击状态出现下面的字体 修改里面的背景和圆角还有颜色字体 */
 .dropdown{position:relative}
-.dropdown:hover{background-color:#E6E6FA;}/* 鼠标点击状态后面出现的背景颜色 */
+.dropdown:hover{background-color:#71BCFA}/* 鼠标点击状态后面出现的背景颜色 */
 .dropdown:hover .dropdown-menu{display:block}
 .dropdown-menu{display:none;position:absolute;top:40px;background:#ffffff;border-radius:5px;padding:5px 0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.3);}/* 鼠标点击状态下面选项的背景颜色 */
 .dropdown-menu:before{content:'';position:absolute;top:-6px;left:23px;border-bottom:6px solid #F8F8FF;border-left:7px solid transparent;border-right:7px solid transparent} /* 选择菜单出现的小三角形箭头颜色 */
-.dropdown-menu a { color: #454C59; line-height: 26px; min-width: 135px; font-size:13px; margin: 1px 0; padding: 0 20px; } /* 选择菜单横条间长度和间距和字体颜色 */
+.dropdown-menu a { color: #454C59; line-height: 24px; min-width: 135px; font-size:13px; margin: 1px 0; padding: 0 20px; } /* 选择菜单横条间长度和间距和字体颜色 */
 .dropdown-menu a:hover { background: rgba(0,0,0,.1); color: #0099cc} /* 选择菜单鼠标放上后出现的字体颜色 */
 
 .cbi-dropdown{display:inline-block;width:210px;height:30px;padding:4px;font-size:13px;line-height:18px;color:gray;border:1px solid #ccc;border-radius:3px;box-sizing:border-box}
@@ -173,6 +170,20 @@ h2+.cbi-map-descr { margin-top: -10px; }
 
 /* Fieldset */   /* 主页系统内存网络等字体颜色和错位问题#85d9ff */
 fieldset{border:0;margin:10px 0;padding:0}
+fieldset legend {
+	margin: 5px 0;
+	padding: 3px 20px;
+	border: 1.8px dashed #1e7ace;
+	border-radius: 20px;
+	background: #fff;
+	color: #1e7ace;
+	font-weight: 700;
+	transform:rotate(-4.2deg);
+     -ms-transform:rotate(-4.2deg); /* IE 9 */
+    -moz-transform:rotate(-4.2deg); /* Firefox */
+ -webkit-transform:rotate(-4.2deg); /* Safari and Chrome */
+      -o-transform:rotate(-4.2deg); /* Opera */
+}                                              /* 修改系统天气内存字体角度添加阴影颜色 */
 fieldset fieldset{margin:0}
 .cbi-value{margin-bottom:10px;zoom:1;clear:both}
 .table .cbi-value-field,table .cbi-value-field{display:table-cell}
@@ -333,9 +344,9 @@ input[type=file]{padding:0;border:0}
 .zone-forwards>*{flex:1 1 40%;padding:1px}
 
 /* Footer */  /* 最底栏颜色 */
-footer{border-top:1.5px dashed #85d9ff;color:#111;font-size: 12px;margin-top:10px;padding:10px 0 ;text-align:center}
+footer{border-top:1.5px dashed #726bda;color:#FF6060;font-size: 12px;margin-top:10px;padding:10px 0 ;text-align:center}
 footer a{color:#726bda}
-footer a:hover{color:#fff}
+footer a:hover{color:#B873B9}
 
 /* diy */
 
@@ -604,7 +615,6 @@ body.modal-overlay-active #modal_overlay>.modal {
 
 .btn.primary,
 .cbi-button-action.important,
-.cbi-page-actions .cbi-button-apply,
 .cbi-section-actions .cbi-button-edit {
     color: #fff;
     background: #726bda;
